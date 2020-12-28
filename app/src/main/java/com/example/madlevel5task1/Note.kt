@@ -9,15 +9,15 @@ import java.util.*
 data class Note(
 
     @ColumnInfo(name = "title")
-    var reminderText: String,
-
-    @PrimaryKey(autoGenerate = true)
-    @ColumnInfo(name = "id")
-    var id: Long? = null,
+    var title: String,
 
     @ColumnInfo(name = "lastUpdated")
     var lastUpdated: Date,
 
     @ColumnInfo(name = "text")
     var text: String,
+
+    @PrimaryKey(autoGenerate = true)
+    @ColumnInfo(name = "id")
+    var id: Long? = null,
 )
